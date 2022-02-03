@@ -109,6 +109,12 @@ a:active {
   background-color: var(--dark-backround-color);
 }
 
+@media (pointer: coarse) {
+  .wrapper {
+    scroll-snap-type: none;
+  }
+}
+
 .section {
   width: 100vw;
 
