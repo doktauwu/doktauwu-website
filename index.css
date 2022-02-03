@@ -93,6 +93,11 @@ a:active {
   color: #191919;
   cursor: pointer;
   -webkit-user-select: none;
+  transition: all ease 0.25s;
+}
+
+.gn-lang-btn:hover {
+  transform: scale(1.1);
 }
 
 .wrapper {
