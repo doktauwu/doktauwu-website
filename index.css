@@ -25,6 +25,8 @@
   /* shadows */
   --nav-bar--shadow: 0px 5px 5px rgba(0, 0, 0, 0.096);
   --nav-bar-button-shadow: 0px 3px 5px rgba(0, 0, 0, 0.055);
+  /* filter */
+  --dark-blury-filter: blur(50px) brightness(0.6);
   /* amounts */
   --section-side-pardding: 15px;
   --nav-bar-height: 75px;
@@ -184,7 +186,9 @@ a:active {
   border-radius: var(--section-round);
   font-size: 50px;
   /* background-color: rgb(219, 219, 219); */
-  backdrop-filter: blur(50px) brightness(0.6);
+  backdrop-filter: var(--dark-blury-filter);
+  -webkit-backdrop-filter: var(--dark-blury-filter);
+  z-index: 0;
   color: var(--text-on-black-color);
   margin-bottom: 20px;
 }
@@ -192,7 +196,9 @@ a:active {
 .sect-intro__content {
   max-width: 600px;
   /* min-height: 150px; */
-  backdrop-filter: blur(50px) brightness(0.6);
+  backdrop-filter: var(--dark-blury-filter);
+  -webkit-backdrop-filter: var(--dark-blury-filter);
+  z-index: 0;
   padding: 15px;
   border-radius: var(--section-round);
   color: var(--text-on-black-color);
@@ -207,7 +213,9 @@ a:active {
   border-radius: var(--section-round);
   font-size: 50px;
   /* background-color: rgb(219, 219, 219); */
-  backdrop-filter: blur(50px) brightness(0.6);
+  backdrop-filter: var(--dark-blury-filter);
+  -webkit-backdrop-filter: var(--dark-blury-filter);
+  z-index: 0;
   color: var(--text-on-black-color);
   margin-bottom: 20px;
   display: flex;
@@ -357,11 +365,12 @@ a:active {
     rgb(24, 24, 24)
   );
   backdrop-filter: brightness(0.6);
+  -webkit-backdrop-filter: brightness(0.6);
   transition: all ease 0.25s;
 }
 
 .sect-recent-pj__pj-card:hover .pj-card__bg-filter {
-  backdrop-filter: brightness(0.7);
+  -webkit-backdrop-filter: brightness(0.7);
 }
 
 .pj-card__bg-image {
@@ -382,6 +391,7 @@ a:active {
   justify-content: center;
   /* background-color: rgba(63, 63, 63, 0.5); */
   backdrop-filter: brightness(1);
+  -webkit-backdrop-filter: brightness(1);
 }
 
 .pj-card__title {
@@ -404,6 +414,7 @@ a:active {
   /* background-color: rgba(255, 255, 255, 0.2); */
   border-top: solid 1px var(--text-on-black-color);
   backdrop-filter: brightness(1);
+  -webkit-backdrop-filter: brightness(1);
 }
 
 .pj-card__row:nth-child(3) > img {
@@ -452,7 +463,9 @@ a:active {
   border-radius: var(--section-round);
   font-size: 15px;
   /* background-color: rgb(219, 219, 219); */
-  backdrop-filter: blur(50px) brightness(0.6);
+  backdrop-filter: var(--dark-blury-filter);
+  -webkit-backdrop-filter: var(--dark-blury-filter);
+  z-index: 0;
   color: var(--text-on-black-color);
   margin-bottom: 20px;
   display: flex;
