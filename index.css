@@ -83,7 +83,7 @@ a:active {
   width: calc(var(--nav-bar-height) / 1.618);
   height: calc(var(--nav-bar-height) / 1.618);
   position: absolute;
-  right: calc(var(--nav-bar-height) / 2);
+  right: calc(calc(var(--nav-bar-height) - var(--nav-bar-height) / 1.618) / 2);
   background-color: var(--primary-color);
   font-family: var(--font-bold);
   display: flex;
