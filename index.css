@@ -190,7 +190,13 @@ a:active {
   height: 40px;
   margin-right: 25px;
   cursor: pointer;
+  transition: all ease 0.25s;
 }
+
+.sect-intro__link:hover {
+  transform: scale(1.1);
+}
+
 .sect-intro__link:last-child {
   margin-right: 0px;
 }
