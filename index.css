@@ -362,8 +362,9 @@ a:active {
   left: 0px;
   position: absolute;
   background-image: linear-gradient(
-    rgba(255, 192, 203, 0.007),
-    rgb(24, 24, 24)
+    148deg,
+    rgba(18, 18, 18, 0),
+    var(--dark-backround-color)
   );
   backdrop-filter: brightness(0.6);
   -webkit-backdrop-filter: brightness(0.6);
@@ -371,6 +372,7 @@ a:active {
 }
 
 .sect-recent-pj__pj-card:hover .pj-card__bg-filter {
+  backdrop-filter: brightness(0.7);
   -webkit-backdrop-filter: brightness(0.7);
 }
 
