@@ -1,4 +1,4 @@
-import localizationFile from "./localization.json" assert{type: "json"}
+import localizationFile from "./localization.json" assert{type: "json"};
 
 let language;
 
