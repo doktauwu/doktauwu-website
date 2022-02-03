@@ -30,6 +30,9 @@
   --nav-bar-height: 75px;
 
   --section-round: 17px;
+
+  /* fonts */
+  --font-bold: alice-bold, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -69,10 +72,27 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .gn-logo {
   height: calc(var(--nav-bar-height) / 1.618);
+}
+
+.gn-lang-btn {
+  width: calc(var(--nav-bar-height) / 1.618);
+  height: calc(var(--nav-bar-height) / 1.618);
+  position: absolute;
+  right: calc(var(--nav-bar-height) / 2);
+  background-color: var(--primary-color);
+  font-family: var(--font-bold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #191919;
+  cursor: pointer;
+  -webkit-user-select: none;
 }
 
 .wrapper {
@@ -266,7 +286,7 @@ a:active {
   display: inline;
   /* !need opti! PC SIZE font-size: 55px; */
   font-size: 40px;
-  font-family: alice-bold, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-bold);
   color: var(--text-on-black-color);
   margin: 0px 15px;
   padding-bottom: 5px;
@@ -355,7 +375,7 @@ a:active {
 
 .pj-card__title {
   font-size: 35px;
-  font-family: alice-bold, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-bold);
   margin-bottom: 7px;
   color: var(--primary-color);
 }
