@@ -75,6 +75,9 @@ body {
 .transition--loaded {
   pointer-events: none;
   opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 .transition__logo {
