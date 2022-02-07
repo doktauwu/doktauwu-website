@@ -110,7 +110,7 @@ const languageBtnHandler = () => {
 let language;
 
 
-if (navigator.language === "ko" || navigator.language === "ko-KR") {
+if (navigator.language === "ko" || navigator.language === "ko-KR" || navigator.language === "ko-kr") {
     language = "ko"
 }
 else {
