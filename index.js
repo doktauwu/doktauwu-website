@@ -27,7 +27,7 @@ const localizationFile = {
             "en": "Hello!"
         },
         "home_sect-intro_description": {
-            "ko": " 웹 개발, 게임 개발, 딥러닝 등<br> 다양한 분야를 취미 삼아 공부하고 있는 <br>DoktaUwU (독타 UwU)입니다.<br />현재 아래와 같은 사이트에서 활동하고 있습니다 :)",
+            "ko": "웹 개발, 게임 개발, 딥러닝 등<br> 다양한 분야를 취미 삼아 공부하고 있는 <br>DoktaUwU(독타 UwU)입니다.<br />현재 아래와 같은 사이트에서 활동하고 있습니다 :)",
             "en": "I'm DoktaUwU learning Web development, Game development, Deep learning, etc. as hobby.<br>I'm active on these sites at the bottom. :)"
         },
         "home_sect-recent-pj_title": {
@@ -77,8 +77,38 @@ const localizationFile = {
     }
 }
 
+// Replace all the localizing target texts(.lang-text)
+
+const fillNewText = (newLang) => {
+    const targetTexts = document.querySelectorAll(".lang-text");
+
+    targetTexts.forEach((element) => {
+        try {
+            const textcode = element.getAttribute("textcode");
+            element.innerHTML = localizationFile.textDictionary[localizationFile.shortcut[textcode]][newLang]
+        }
+        catch { console.error("Failed to read localizing content") }
+    })
+}
+
+// Language Button Event Handler
+
+const languageBtnHandler = () => {
+    if (language === "ko") {
+        language = "en"
+    }
+    else {
+        language = "ko"
+    }
+
+    fillNewText(language)
+}
+
+
+// init codes
 
 let language;
+
 
 if (navigator.language === "ko") {
     language = "ko"
@@ -87,30 +117,12 @@ else {
     language = "en"
 }
 
-// Replace Language
-
-const replaceLanguage = () => {
-    if (language === "ko") {
-        language = "en"
-    }
-    else {
-        language = "ko"
-    }
-
-    const targetTexts = document.querySelectorAll(".lang-text");
-
-    targetTexts.forEach((element) => {
-        try {
-            const textcode = element.getAttribute("textcode");
-            element.innerHTML = localizationFile.textDictionary[localizationFile.shortcut[textcode]][language]
-        }
-        catch { console.error("Failed to read localizing content") }
-    })
-
-}
+fillNewText(language)
 
 
+
+// main codes
 
 // Language Button Event Listner
 
-document.querySelector(".gn-lang-btn").addEventListener("click", replaceLanguage)
+document.querySelector(".gn-lang-btn").addEventListener("click", languageBtnHandler)
