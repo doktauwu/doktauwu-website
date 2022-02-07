@@ -54,6 +54,44 @@ a:active {
   background-color: none;
 }
 
+body {
+  position: relative;
+}
+
+.transition {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-backround-color);
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9999999999;
+  justify-content: center;
+  height: center;
+  transition: opacity 0.25s ease;
+}
+
+.transition--loaded {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.transition__logo {
+  animation: spin forwards infinite 1s ease;
+  width: 100px;
+  height: auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .global-nav {
   width: 100vw;
   height: var(--nav-bar-height);
@@ -64,7 +102,7 @@ a:active {
   position: fixed;
   top: 0px;
   border-bottom: var(--primary-color) solid 2px;
-  z-index: 9999999;
+  z-index: 100;
 }
 
 .gn-header {

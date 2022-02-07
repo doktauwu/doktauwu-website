@@ -1,3 +1,7 @@
+window.onload = () => {
+    document.querySelector(".transition").classList.add("transition--loaded")
+}
+
 // import localizationFile from "./localization.json" assert{type: "json"};
 
 const localizationFile = {
