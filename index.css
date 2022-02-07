@@ -135,6 +135,7 @@ body {
   border-radius: 10px;
   color: #191919;
   cursor: pointer;
+  user-select: none;
   -webkit-user-select: none;
   transition: all ease 0.25s;
 }
