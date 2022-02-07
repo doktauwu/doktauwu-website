@@ -23,8 +23,8 @@ const localizationFile = {
             "en": "Hello!"
         },
         "home_sect-intro_description": {
-            "ko": "웹 개발, 게임 개발, 딥러닝 등<br> 다양한 분야를 공부하고 있는 <br>Dokta UwU (독타 UwU)입니다.<br>현재 아래와 같은 사이트에서 활동하고 있습니다 :)",
-            "en": "I'm Dokta UwU learning Web development, Game development, Deep learning, etc. I'm active on these sites at the bottom."
+            "ko": " 웹 개발, 게임 개발, 딥러닝 등<br> 다양한 분야를 취미 삼아 공부하고 있는 <br>DoktaUwU (독타 UwU)입니다.<br />현재 아래와 같은 사이트에서 활동하고 있습니다 :)",
+            "en": "I'm DoktaUwU learning Web development, Game development, Deep learning, etc. as hobby.<br>I'm active on these sites at the bottom. :)"
         },
         "home_sect-recent-pj_title": {
             "ko": "최근 프로젝트",
