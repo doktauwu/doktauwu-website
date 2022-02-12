@@ -1,11 +1,11 @@
 @import url(reset.css);
 @font-face {
   font-family: "alice-regular";
-  src: url(assets/fonts/EliceDigitalBaeum_Regular.ttf);
+  src: url(https://doktauwu.com/assets/fonts/EliceDigitalBaeum_Regular.ttf);
 }
 @font-face {
   font-family: "alice-bold";
-  src: url(assets/fonts/EliceDigitalBaeum_Bold.ttf);
+  src: url(https://doktauwu.com/assets/fonts/EliceDigitalBaeum_Bold.ttf);
 }
 
 :root {
