@@ -165,7 +165,7 @@ body {
   max-width: 1920px;
   height: calc(100vh - var(--nav-bar-height));
   background-color: rgb(85, 85, 85);
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   padding: 0px var(--section-side-pardding);
   margin: 0 auto;
   box-sizing: border-box;
